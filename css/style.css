@@ -1,4 +1,10 @@
-.intro  {
+body  {
   background-color: powderblue;
+}
+h1  {
+  color: black;
+}
+p  {
+  color: white;
 }
 
