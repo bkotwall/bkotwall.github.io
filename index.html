@@ -27,7 +27,25 @@
     </ul>
       <a href="https://github.com/bkotwall/bkotwall.github.io/">Visit my GitHub page</a> 
       <a href="https://www.codecademy.com/users/bkotwall/achievements/">Visit my Codecademy page</a>
-    
+    <p>Image to use:</p>
+    <img id="flag" src="https://images-na.ssl-images-amazon.com/images/I/31uHCupY2CL.jpg" alt="flag" width="650" height="300">
+
+    <p>Canvas to fill:</p>
+    <canvas id="myCanvas" width="300" height="200"
+    style="border:3px solid darkblue;">                                        
+    Your browser does not support the HTML5 canvas tag.</canvas>
+
+    <p><button onclick="myCanvas()">Try it</button></p>
+
+    <script>
+    function myCanvas() {
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    var img = document.getElementById("flag");
+    ctx.drawImage(img,10,10);
+}
+</script>
+
     
     <img src="https://rogerfedererfan.files.wordpress.com/2015/04/mc-gallery-weds7-2.jpg" alt="Roger Federer on clay">
     
